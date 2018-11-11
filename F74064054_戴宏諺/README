@@ -1,0 +1,38 @@
+HW3 assignement2
+
+In eval.cpp
+	I use the getline funciton to read a line and
+use stringstream to put the content to the strin-
+gstream and input to a string named temp.then pu-
+sh the temp into the str stack data type.Use the 
+evaluate algorithm to evalute the number of the 
+expression.
+	At the first,I just push the number string i-
+nto num stack.When the program meet a token,it w-
+ill use the expression,token is the same as it is
+met to calculate the top 2 number in string than 
+push back to the num stack.Then repeat the step
+above util the str stack is empty. 
+
+In prefix.cpp
+	I use the identical method to read a line and
+input to the str stack.
+	At the first,I declare three stack to store 
+the data.Str stack for the input data ranged rev-
+ersedly.Token stack for the token string. And Ans
+stack for the result be ready to output.
+	Every time,I just check the str.top() content
+to choose which statment been runned.The rule as
+follow. 
+	When the content in the str.top() is a number 
+string.I will push it into the ans stack directly.
+	When it is a right parathesis,I will push it 
+into token stack directly.
+	When it is a left parathesis,I will pop the 
+token stack util rparathesis been poped.And,pop 
+the lparathesis afterward.
+	When it is a token and the precedence is not
+higher than the token.top(),I push it into token
+stack.Otherwise,I will push the token into ans 
+stack util the precedence in the token stack is 
+lower than the token in str.top().
