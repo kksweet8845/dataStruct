@@ -1,0 +1,14 @@
+HW4
+I use the different algorithm to realize the project sparse matrices.
+The program in text book can't be input by irregular order terms into
+the program.But my program can input the irregular oder terms and can
+output the matrix layout outcome just to use the "mwrite_(matrixPtr)"
+function into which passed the pointer of the sparse matrices.
+In order to realize printing out the matrix outcome in matrix layout,
+it forces me to link the terms depending on their row and column.
+Realizing the mmult function just to differentiate the row and column
+from a and b sparse matrices.Just like normal matrices mutliplication.
+Mwrite funciton,Just follow the row and col access in major row order.
+Moreover,I write the overloading mread function to read matrices with 
+a pointer link a line of node not like sparse matrices just like one
+dimension array.

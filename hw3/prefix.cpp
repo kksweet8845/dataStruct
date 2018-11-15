@@ -55,7 +55,7 @@ int main(void){
 		}
 		
 		while(!ans.empty()){
-			cout << ans.top();
+			cout << ans.top()<<" ";
 			ans.pop();
 		}
 		cout<<endl;
